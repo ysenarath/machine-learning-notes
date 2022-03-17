@@ -1,11 +1,10 @@
-# Welcome to your Jupyter Book
+# Welcome to Machine Learning notes
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+This is a yet another book that contains machine learning notebooks. It tries to provide you with some of the most intutive ways to understand machine learning. This book follows few popular books on machine learning:
 
-Check out the content pages bundled with this sample book to see more.
+1. Theod & Koutroumbas (2009) Pattern recognition, Elsevier (4th ed.).
+2. Mitchell (1997) Machine Learning, McGraw Hill.
+3. Hastie, Tibshirani & Friedman (2001) The elements of statistical learning. Springer.
 
 ```{tableofcontents}
 ```
