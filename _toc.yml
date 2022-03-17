@@ -2,6 +2,6 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: chapters/01_introduction/01_introduction.md
+root: chapters/01_introduction.md
 chapters:
-- file: chapters/02_classifiers/01_introduction.md
+- file: chapters/02_classifiers.md
