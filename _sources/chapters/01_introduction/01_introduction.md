@@ -1,4 +1,4 @@
-# Welcome to Machine Learning notes
+# Welcome to Machine Learning Notes
 
 This is a yet another book that contains machine learning notebooks. It tries to provide you with some of the most intutive ways to understand machine learning. This book follows few popular books on machine learning:
 
