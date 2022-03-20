@@ -67,5 +67,5 @@ $$
 - We observe the shaded area as the error when classifying according to above rules.
 
 $$
-P_e = 
+P_e = \dfrac{1}{2}\int_{x_0}^{\infty}p(x|\omega_1)dx + \dfrac{1}{2}\int_{-\infty}^{x_0}p(x|\omega_2)dx
 $$
