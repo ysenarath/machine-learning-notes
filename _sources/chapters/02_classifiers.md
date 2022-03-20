@@ -40,10 +40,12 @@ $$
 - Bayes classification rule
 
 $$
-	\textbf{x} -> \omega_1 if P(\omega_1|\textbf{x}) > P(\omega_2|\textbf{x})
-	\textbf{x} -> \omega_2 if P(\omega_1|\textbf{x}) < P(\omega_2|\textbf{x})
+	\textbf{x} -> \omega_1 \text{ if } P(\omega_1|\textbf{x}) > P(\omega_2|\textbf{x})
+	\textbf{x} -> \omega_2 \text{ if } P(\omega_1|\textbf{x}) < P(\omega_2|\textbf{x})
 	% \textbf{x} -> \omega_1 or \omega_2 if P(\omega_1|\textbf{x}) = P(\omega_2|\textbf{x})
 $$
+
+- 
 	- Simplifying above we get,
 
 $$
