@@ -299,9 +299,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>Applying Bayes rule we can calculate <span class="math notranslate nohighlight">\(P(\omega_i|\textbf{x})\)</span></p></li>
 </ul>
 <div class="math notranslate nohighlight">
-\[
-	P(\omega_i|\textbf{x}) = p(\textbf{x}|\omega_i)P(\omega_i)/p(\omega_i)
-\]</div>
+\[\begin{split}
+	P(\omega_i|\textbf{x}) = p(\textbf{x}|\omega_i)P(\omega_i)/p(\omega_i) \\
+	p(\textbf{x}) = \sum_{i=1}^{2} p(\textbf{x}|\omega_i)P(\omega_i)
+\end{split}\]</div>
+<ul class="simple">
+<li></li>
+</ul>
 </div>
 </div>
 </div>

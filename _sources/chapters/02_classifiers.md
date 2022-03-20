@@ -21,6 +21,7 @@ We present the class probabilities provided the unknown pattern as a conditional
 #### Case 1: Two Classes
 
 - Let $\omega_1$, $\omega_2$ be the two classes which need to be identified.
+
 - Assumptions
 	- $P(\omega_i)$ is known.
 		- If not available, can be calculated using training data based on the propotion of each class.
@@ -28,8 +29,12 @@ We present the class probabilities provided the unknown pattern as a conditional
 	- $p(\textbf{x}|\omega_i)$ is known.
 		- $p(\textbf{x}|\omega_i)$ is called class-conditional probability density function (aka. likelihood). Note $p$ => $P$ if $\textbf{x}$ is categorical.
 		- If not known, they can also be estimated from the available training data ([will be discussed later](/cross_ref_link_not_found)).
+
 - Applying Bayes rule we can calculate $P(\omega_i|\textbf{x})$
 
 $$
-	P(\omega_i|\textbf{x}) = p(\textbf{x}|\omega_i)P(\omega_i)/p(\omega_i)
+	P(\omega_i|\textbf{x}) = p(\textbf{x}|\omega_i)P(\omega_i)/p(\omega_i) \\
+	p(\textbf{x}) = \sum_{i=1}^{2} p(\textbf{x}|\omega_i)P(\omega_i)
 $$
+
+- 
