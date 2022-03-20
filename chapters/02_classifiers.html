@@ -282,13 +282,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>Let <span class="math notranslate nohighlight">\(\omega_1\)</span>, <span class="math notranslate nohighlight">\(\omega_2\)</span> be the two classes which need to be identified.</p></li>
 <li><p>Assumptions</p>
 <ul>
-<li><p><span class="math notranslate nohighlight">\(P(\omega_1)\)</span>, <span class="math notranslate nohighlight">\(P(\omega_2)\)</span> is known.</p>
+<li><p><span class="math notranslate nohighlight">\(P(\omega_i)\)</span> is known.</p>
 <ul>
 <li><p>If not available, can be calculated using training data based on the propotion of each class.</p></li>
 <li><p><span class="math notranslate nohighlight">\(P(\omega_i) = N_i / N\)</span>, where <span class="math notranslate nohighlight">\(N_i\)</span> is the number of samples with label <span class="math notranslate nohighlight">\(\omega_i\)</span> and <span class="math notranslate nohighlight">\(N\)</span> is the total number of samples.</p></li>
 </ul>
 </li>
-<li><p><span class="math notranslate nohighlight">\(p(\textbf{x}|\omega_1)\)</span>, <span class="math notranslate nohighlight">\(p(\textbf{x}|\omega_2)\)</span> is known.</p>
+<li><p><span class="math notranslate nohighlight">\(p(\textbf{x}|\omega_i)\)</span> is known.</p>
 <ul>
 <li><p><span class="math notranslate nohighlight">\(p(\textbf{x}|\omega_i)\)</span> is called class-conditional probability density function (aka. likelihood). Note <span class="math notranslate nohighlight">\(p\)</span> =&gt; <span class="math notranslate nohighlight">\(P\)</span> if <span class="math notranslate nohighlight">\(\textbf{x}\)</span> is categorical.</p></li>
 <li><p>If not known, they can also be estimated from the available training data (<span class="xref myst">will be discussed later</span>).</p></li>
@@ -296,8 +296,12 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </li>
-<li><p><span class="math notranslate nohighlight">\(P(\omega_i|\textbf{x}) = p(\textbf{x}|\omega_i)P(\omega_i)/p(\textbf{\omega_i})\)</span></p></li>
+<li><p>Applying Bayes rule we can calculate <span class="math notranslate nohighlight">\(P(\omega_i|\textbf{x})\)</span></p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[
+	P(\omega_i|\textbf{x}) = p(\textbf{x}|\omega_i)P(\omega_i)/p(\omega_i)
+\]</div>
 </div>
 </div>
 </div>
