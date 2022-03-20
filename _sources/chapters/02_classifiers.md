@@ -40,8 +40,8 @@ $$
 - Bayes classification rule
 
 $$
-	\textbf{x} -> \omega_1 \text{ if } P(\omega_1|\textbf{x}) > P(\omega_2|\textbf{x})
-	\textbf{x} -> \omega_2 \text{ if } P(\omega_1|\textbf{x}) < P(\omega_2|\textbf{x})
+	\textbf{x} \rightarrow \omega_1 \text{ if } P(\omega_1|\textbf{x}) > P(\omega_2|\textbf{x})
+	\textbf{x} \rightarrow \omega_2 \text{ if } P(\omega_1|\textbf{x}) < P(\omega_2|\textbf{x})
 	% \textbf{x} -> \omega_1 or \omega_2 if P(\omega_1|\textbf{x}) = P(\omega_2|\textbf{x})
 $$
 
@@ -60,6 +60,12 @@ $$
 - When 
 
 $$
-x \in R_1$, $x -> \omega_1
-x \in R_2$, $x -> \omega_2
+x \in R_1, x \rightarrow \omega_1
+x \in R_2, x \rightarrow \omega_2
+$$
+
+- We observe the shaded area as the error when classifying according to above rules.
+
+$$
+P_e = 
 $$

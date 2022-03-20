@@ -312,8 +312,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <div class="math notranslate nohighlight">
 \[
-	\textbf{x} -&gt; \omega_1 \text{ if } P(\omega_1|\textbf{x}) &gt; P(\omega_2|\textbf{x})
-	\textbf{x} -&gt; \omega_2 \text{ if } P(\omega_1|\textbf{x}) &lt; P(\omega_2|\textbf{x})
+	\textbf{x} \rightarrow \omega_1 \text{ if } P(\omega_1|\textbf{x}) &gt; P(\omega_2|\textbf{x})
+	\textbf{x} \rightarrow \omega_2 \text{ if } P(\omega_1|\textbf{x}) &lt; P(\omega_2|\textbf{x})
 	% \textbf{x} -&gt; \omega_1 or \omega_2 if P(\omega_1|\textbf{x}) = P(\omega_2|\textbf{x})
 \]</div>
 <p>Simplifying above we get,</p>
@@ -332,8 +332,15 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <div class="math notranslate nohighlight">
 \[
-x \in R_1$, $x -&gt; \omega_1
-x \in R_2$, $x -&gt; \omega_2
+x \in R_1, x \rightarrow \omega_1
+x \in R_2, x \rightarrow \omega_2
+\]</div>
+<ul class="simple">
+<li><p>We observe the shaded area as the error when classifying according to above rules.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+P_e = 
 \]</div>
 </div>
 </div>
