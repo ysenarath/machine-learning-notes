@@ -209,6 +209,11 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
     </ul>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#minimizing-the-classification-error-probability">
+     Minimizing the Classification Error Probability
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -247,6 +252,11 @@ const thebe_selector_output = ".output, .cell_output"
       </a>
      </li>
     </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#minimizing-the-classification-error-probability">
+     Minimizing the Classification Error Probability
+    </a>
    </li>
   </ul>
  </li>
@@ -336,13 +346,29 @@ x \in R_1, x \rightarrow \omega_1
 x \in R_2, x \rightarrow \omega_2
 \]</div>
 <ul class="simple">
-<li><p>We observe the shaded area as the error when classifying according to above rules.</p></li>
+<li><p>We observe the shaded area as the error when classifying according to above rules. It can be quantified as:</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[
-P_e = \dfrac{1}{2}\int_{x_0}^{\infty}p(x|\omega_1)dx + \dfrac{1}{2}\int_{-\infty}^{x_0}p(x|\omega_2)dx
+P_e = \dfrac{1}{2}\int_{-\infty}^{x_0}p(x|\omega_2)dx + \dfrac{1}{2}\int_{x_0}^{\infty}p(x|\omega_1)dx
 \]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P_e\)</span> is called the classification error probability.</p></li>
+</ul>
 </div>
+</div>
+<div class="section" id="minimizing-the-classification-error-probability">
+<h3>Minimizing the Classification Error Probability<a class="headerlink" href="#minimizing-the-classification-error-probability" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The Bayesian classifier is optimal with respect to minimizing the classification error probability.</p></li>
+<li><p>Proof:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_e = P(x \in R_2, \omega_1) + P(x \in R_1, \omega_2) \\
+P_e = P(\textbf{x} \in R_2|\omega_1)P(\omega_1) + P(x \in R_1|\omega_2)P(\omega_2) \\
+P_e = P(\omega_1)\int_{R_2}p(\textbf{x}|\omega_1)d\textbf{x} + P(\omega_2)\int_{R_1}p(\textbf{x}|\omega_2)d\textbf{x}
+\end{split}\]</div>
 </div>
 </div>
 </div>

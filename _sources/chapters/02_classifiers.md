@@ -64,8 +64,21 @@ x \in R_1, x \rightarrow \omega_1
 x \in R_2, x \rightarrow \omega_2
 $$
 
-- We observe the shaded area as the error when classifying according to above rules.
+- We observe the shaded area as the error when classifying according to above rules. It can be quantified as:
 
 $$
-P_e = \dfrac{1}{2}\int_{x_0}^{\infty}p(x|\omega_1)dx + \dfrac{1}{2}\int_{-\infty}^{x_0}p(x|\omega_2)dx
+P_e = \dfrac{1}{2}\int_{-\infty}^{x_0}p(x|\omega_2)dx + \dfrac{1}{2}\int_{x_0}^{\infty}p(x|\omega_1)dx
+$$
+
+- $P_e$ is called the classification error probability. 
+
+### Minimizing the Classification Error Probability
+
+- The Bayesian classifier is optimal with respect to minimizing the classification error probability.
+- Proof:
+	
+$$
+P_e = P(x \in R_2, \omega_1) + P(x \in R_1, \omega_2) \\
+P_e = P(\textbf{x} \in R_2|\omega_1)P(\omega_1) + P(x \in R_1|\omega_2)P(\omega_2) \\
+P_e = P(\omega_1)\int_{R_2}p(\textbf{x}|\omega_1)d\textbf{x} + P(\omega_2)\int_{R_1}p(\textbf{x}|\omega_2)d\textbf{x}
 $$
