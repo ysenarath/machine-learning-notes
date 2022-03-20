@@ -48,5 +48,5 @@ $$
 	- Simplifying above we get,
 		
 $$
-	p(\textbf{x}|\omega_1)P(\omega_1) \lessgtr p(\textbf{x}|\omega_1)P(\omega_1)
+	p(\textbf{x}|\omega_1)P(\omega_1) \lessgtr p(\textbf{x}|\omega_2)P(\omega_2)
 $$
