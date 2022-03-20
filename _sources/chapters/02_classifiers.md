@@ -70,7 +70,13 @@ $$
 P_e = \dfrac{1}{2}\int_{-\infty}^{x_0}p(x|\omega_2)dx + \dfrac{1}{2}\int_{x_0}^{\infty}p(x|\omega_1)dx
 $$
 
-- $P_e$ is called the classification error probability. 
+- $P_e$ is called the classification error probability.
+
+#### Case 2: Multiple Classes
+
+$$
+	\textbf{x} \rightarrow \omega_i \text{ if } P(\omega_i|\textbf{x}) > P(\omega_j|\textbf{x}) \forall j \ne i
+$$
 
 ### Minimizing the Classification Error Probability
 
@@ -82,5 +88,9 @@ P_e = P(x \in R_2, \omega_1) + P(x \in R_1, \omega_2) \\
 P_e = P(\textbf{x} \in R_2|\omega_1)P(\omega_1) + P(x \in R_1|\omega_2)P(\omega_2) \\
 P_e = P(\omega_1)\int_{R_2}p(\textbf{x}|\omega_1)d\textbf{x} + P(\omega_2)\int_{R_1}p(\textbf{x}|\omega_2)d\textbf{x} \\ 
 P_e = \int_{R_2}P(\omega_1|\textbf{x})p(\textbf{x})d\textbf{x} + \int_{R_1}P(\omega_2|\textbf{x})p(\textbf{x})d\textbf{x} \\
-P_e = P(\omega_1) - \int_{R_1}(P(\omega_1|\textbf{x})-P(\omega_1|\textbf{x}))p(\textbf{x})d\textbf{x}
+P_e = P(\omega_1) - \int_{R_1}(P(\omega_1|\textbf{x})-P(\omega_2|\textbf{x}))p(\textbf{x})d\textbf{x}
 $$
+
+- Probability of error is minimized if $R_1$ is the space $P(\omega_1|\textbf{x}) > P(\omega_2|\textbf{x})$.
+
+

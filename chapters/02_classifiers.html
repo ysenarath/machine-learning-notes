@@ -207,6 +207,11 @@ const thebe_selector_output = ".output, .cell_output"
        Case 1: Two Classes
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#case-2-multiple-classes">
+       Case 2: Multiple Classes
+      </a>
+     </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -249,6 +254,11 @@ const thebe_selector_output = ".output, .cell_output"
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#case-1-two-classes">
        Case 1: Two Classes
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#case-2-multiple-classes">
+       Case 2: Multiple Classes
       </a>
      </li>
     </ul>
@@ -356,6 +366,13 @@ P_e = \dfrac{1}{2}\int_{-\infty}^{x_0}p(x|\omega_2)dx + \dfrac{1}{2}\int_{x_0}^{
 <li><p><span class="math notranslate nohighlight">\(P_e\)</span> is called the classification error probability.</p></li>
 </ul>
 </div>
+<div class="section" id="case-2-multiple-classes">
+<h4>Case 2: Multiple Classes<a class="headerlink" href="#case-2-multiple-classes" title="Permalink to this headline">¶</a></h4>
+<div class="math notranslate nohighlight">
+\[
+	\textbf{x} \rightarrow \omega_i \text{ if } P(\omega_i|\textbf{x}) &gt; P(\omega_j|\textbf{x}) \forall j \ne i
+\]</div>
+</div>
 </div>
 <div class="section" id="minimizing-the-classification-error-probability">
 <h3>Minimizing the Classification Error Probability<a class="headerlink" href="#minimizing-the-classification-error-probability" title="Permalink to this headline">¶</a></h3>
@@ -369,8 +386,11 @@ P_e = P(x \in R_2, \omega_1) + P(x \in R_1, \omega_2) \\
 P_e = P(\textbf{x} \in R_2|\omega_1)P(\omega_1) + P(x \in R_1|\omega_2)P(\omega_2) \\
 P_e = P(\omega_1)\int_{R_2}p(\textbf{x}|\omega_1)d\textbf{x} + P(\omega_2)\int_{R_1}p(\textbf{x}|\omega_2)d\textbf{x} \\ 
 P_e = \int_{R_2}P(\omega_1|\textbf{x})p(\textbf{x})d\textbf{x} + \int_{R_1}P(\omega_2|\textbf{x})p(\textbf{x})d\textbf{x} \\
-P_e = P(\omega_1) - \int_{R_1}(P(\omega_1|\textbf{x})-P(\omega_1|\textbf{x}))p(\textbf{x})d\textbf{x}
+P_e = P(\omega_1) - \int_{R_1}(P(\omega_1|\textbf{x})-P(\omega_2|\textbf{x}))p(\textbf{x})d\textbf{x}
 \end{split}\]</div>
+<ul class="simple">
+<li><p>Probability of error is minimized if <span class="math notranslate nohighlight">\(R_1\)</span> is the space <span class="math notranslate nohighlight">\(P(\omega_1|\textbf{x}) &gt; P(\omega_2|\textbf{x})\)</span>.</p></li>
+</ul>
 </div>
 </div>
 </div>
