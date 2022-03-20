@@ -308,8 +308,21 @@ const thebe_selector_output = ".output, .cell_output"
 	p(\textbf{x}) = \sum_{i=1}^{2} p(\textbf{x}|\omega_i)P(\omega_i)
 \end{split}\]</div>
 <ul class="simple">
-<li></li>
+<li><p>Bayes classification rule</p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[
+	\textbf{x} -&gt; \omega_1 if P(\omega_1|\textbf{x}) &gt; P(\omega_2|\textbf{x})
+	\textbf{x} -&gt; \omega_2 if P(\omega_1|\textbf{x}) &lt; P(\omega_2|\textbf{x})
+	% \textbf{x} -&gt; \omega_1 or \omega_2 if P(\omega_1|\textbf{x}) = P(\omega_2|\textbf{x})
+\]</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- Simplifying above we get,
+</pre></div>
+</div>
+<div class="math notranslate nohighlight">
+\[
+	p(\textbf{x}|\omega_1)P(\omega_1) \lessgtr p(\textbf{x}|\omega_1)P(\omega_1)
+\]</div>
 </div>
 </div>
 </div>
