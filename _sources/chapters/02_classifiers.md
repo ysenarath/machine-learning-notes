@@ -80,5 +80,7 @@ $$
 $$
 P_e = P(x \in R_2, \omega_1) + P(x \in R_1, \omega_2) \\
 P_e = P(\textbf{x} \in R_2|\omega_1)P(\omega_1) + P(x \in R_1|\omega_2)P(\omega_2) \\
-P_e = P(\omega_1)\int_{R_2}p(\textbf{x}|\omega_1)d\textbf{x} + P(\omega_2)\int_{R_1}p(\textbf{x}|\omega_2)d\textbf{x}
+P_e = P(\omega_1)\int_{R_2}p(\textbf{x}|\omega_1)d\textbf{x} + P(\omega_2)\int_{R_1}p(\textbf{x}|\omega_2)d\textbf{x} \\ 
+P_e = \int_{R_2}P(\omega_1|\textbf{x})p(\textbf{x})d\textbf{x} + \int_{R_1}P(\omega_2|\textbf{x})p(\textbf{x})d\textbf{x} \\
+P_e = P(\omega_1) - \int_{R_1}(P(\omega_1|\textbf{x})-P(\omega_1|\textbf{x}))p(\textbf{x})d\textbf{x}
 $$
