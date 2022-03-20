@@ -81,7 +81,7 @@ $$
 ### Minimizing the Classification Error Probability
 
 - The Bayesian classifier is optimal with respect to minimizing the classification error probability.
-- Proof:
+- Proof (2-class):
 	
 $$
 P_e = P(x \in R_2, \omega_1) + P(x \in R_1, \omega_2) \\
@@ -93,4 +93,6 @@ $$
 
 - Probability of error is minimized if $R_1$ is the space $P(\omega_1|\textbf{x}) > P(\omega_2|\textbf{x})$.
 
+### Minimizing the Average Risk
 
+- Not always error is preferred, need to bias the classification to give more error to some misclassifing some important classes (e.g., diagnosis of a disease).
