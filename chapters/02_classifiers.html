@@ -316,15 +316,24 @@ const thebe_selector_output = ".output, .cell_output"
 	\textbf{x} -&gt; \omega_2 \text{ if } P(\omega_1|\textbf{x}) &lt; P(\omega_2|\textbf{x})
 	% \textbf{x} -&gt; \omega_1 or \omega_2 if P(\omega_1|\textbf{x}) = P(\omega_2|\textbf{x})
 \]</div>
-<ul class="simple">
-<li><ul>
-<li><p>Simplifying above we get,</p></li>
-</ul>
-</li>
-</ul>
+<p>Simplifying above we get,</p>
 <div class="math notranslate nohighlight">
 \[
 	p(\textbf{x}|\omega_1)P(\omega_1) \lessgtr p(\textbf{x}|\omega_2)P(\omega_2)
+\]</div>
+<ul class="simple">
+<li><p>Example with one feature (<span class="math notranslate nohighlight">\(l=1\)</span>) for two equiprobable classes:</p></li>
+</ul>
+<p><img alt="Add Image Here" src="chapters/%5Cimage_not_found" /></p>
+<ul class="simple">
+<li><p>Here we observe two curves, one <span class="math notranslate nohighlight">\(p(\textbf{x}|\omega_1)\)</span> and <span class="math notranslate nohighlight">\(p(\textbf{x}|\omega_2)\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(x_0\)</span> is the value of the feature when <span class="math notranslate nohighlight">\(p(\textbf{x}|\omega_1) = p(\textbf{x}|\omega_2)\)</span></p></li>
+<li><p>When</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+x \in R_1$, $x -&gt; \omega_1
+x \in R_2$, $x -&gt; \omega_2
 \]</div>
 </div>
 </div>

@@ -28,7 +28,7 @@ We present the class probabilities provided the unknown pattern as a conditional
 		- $P(\omega_i) = N_i / N$, where $N_i$ is the number of samples with label $\omega_i$ and $N$ is the total number of samples.
 	- $p(\textbf{x}|\omega_i)$ is known.
 		- $p(\textbf{x}|\omega_i)$ is called class-conditional probability density function (aka. likelihood). Note $p$ => $P$ if $\textbf{x}$ is categorical.
-		- If not known, they can also be estimated from the available training data ([will be discussed later](/cross_ref_link_not_found)).
+		- If not known, they can also be estimated from the available training data ([will be discussed later](/link_not_found)).
 
 - Applying Bayes rule we can calculate $P(\omega_i|\textbf{x})$
 
@@ -45,9 +45,21 @@ $$
 	% \textbf{x} -> \omega_1 or \omega_2 if P(\omega_1|\textbf{x}) = P(\omega_2|\textbf{x})
 $$
 
-- 
-	- Simplifying above we get,
+Simplifying above we get,
 
 $$
 	p(\textbf{x}|\omega_1)P(\omega_1) \lessgtr p(\textbf{x}|\omega_2)P(\omega_2)
+$$
+
+- Example with one feature ($l=1$) for two equiprobable classes:
+
+![Add Image Here](\image_not_found)
+
+- Here we observe two curves, one $p(\textbf{x}|\omega_1)$ and $p(\textbf{x}|\omega_2)$.
+- $x_0$ is the value of the feature when $p(\textbf{x}|\omega_1) = p(\textbf{x}|\omega_2)$
+- When 
+
+$$
+x \in R_1$, $x -> \omega_1
+x \in R_2$, $x -> \omega_2
 $$
