@@ -28,3 +28,4 @@ We present the class probabilities provided the unknown pattern as a conditional
 	- $p(\textbf{x}|\omega_1)$, $p(\textbf{x}|\omega_2)$ is known.
 		- $p(\textbf{x}|\omega_i)$ is called class-conditional probability density function (aka. likelihood). Note $p$ => $P$ if $\textbf{x}$ is categorical.
 		- If not known, they can also be estimated from the available training data ([will be discussed later](cross_ref_link_not_found)).
+- $P(\omega_i|\textbf{x}) = p(\textbf{x}|\omega_i)P(\omega_i)/p(\textbf{\omega_i})$
