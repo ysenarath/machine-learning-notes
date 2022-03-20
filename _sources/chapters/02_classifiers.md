@@ -33,7 +33,7 @@ We present the class probabilities provided the unknown pattern as a conditional
 - Applying Bayes rule we can calculate $P(\omega_i|\textbf{x})$
 
 $$
-	P(\omega_i|\textbf{x}) = p(\textbf{x}|\omega_i)P(\omega_i)/p(\omega_i) \\
+	P(\omega_i|\textbf{x}) = \dfrac{p(\textbf{x}|\omega_i)P(\omega_i)}{p(\omega_i)} \\
 	p(\textbf{x}) = \sum_{i=1}^{2} p(\textbf{x}|\omega_i)P(\omega_i)
 $$
 
