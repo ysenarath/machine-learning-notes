@@ -16,11 +16,11 @@ Lets define a classification task of $M$ classes and each label is represented b
 
 We present the class probabilities provided the unknown pattern as a conditional probability: $P(\omega_i|x), i \in {1, 2, ..., M}$. This probability sometimes is identified as a posteriori probability. The unknown pattern is classified to the class that has the maximum of a posteriori probability.
 
-## Bayes Decision Theory
+### Bayes Decision Theory
 
-### Case 1: Two Classes
+#### Case 1: Two Classes
 
 - Let $\omega_1$, $\omega_2$ be the two classes which need to be identified. 
 - We assume $P(\omega_1)$, $P(\omega_2)$ is known.
 	- If not available, can be calculated using training data based on the propotion of each class.
-	- $P(\omega_i) = N_i / N$, where $N_i$ is the number of examples in 
+	- $P(\omega_i) = N_i / N$, where $N_i$ is the number of samples with label $\omega_i$ and $N$ is the total number of samples.

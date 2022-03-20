@@ -196,16 +196,18 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#bayesian-classifiers">
    Bayesian Classifiers
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bayes-decision-theory">
-   Bayes Decision Theory
-  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#case-1-two-classes">
-     Case 1: Two Classes
+    <a class="reference internal nav-link" href="#bayes-decision-theory">
+     Bayes Decision Theory
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#case-1-two-classes">
+       Case 1: Two Classes
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -233,16 +235,18 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#bayesian-classifiers">
    Bayesian Classifiers
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bayes-decision-theory">
-   Bayes Decision Theory
-  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#case-1-two-classes">
-     Case 1: Two Classes
+    <a class="reference internal nav-link" href="#bayes-decision-theory">
+     Bayes Decision Theory
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#case-1-two-classes">
+       Case 1: Two Classes
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -270,20 +274,20 @@ const thebe_selector_output = ".output, .cell_output"
 <p>In this section, we will discuss about the classifiers that are based on Bayes decision theory. Before going in to the specifics about Bayes decision theory first let un introduce some of the variables and symbols used.</p>
 <p>Lets define a classification task of <span class="math notranslate nohighlight">\(M\)</span> classes and each label is represented by <span class="math notranslate nohighlight">\(\omega_1, \omega_2, ..., \omega_M\)</span>. Let the unknown pattern (aka. feature vecctor) is represented as <span class="math notranslate nohighlight">\(\bold{x}\)</span>.</p>
 <p>We present the class probabilities provided the unknown pattern as a conditional probability: <span class="math notranslate nohighlight">\(P(\omega_i|x), i \in {1, 2, ..., M}\)</span>. This probability sometimes is identified as a posteriori probability. The unknown pattern is classified to the class that has the maximum of a posteriori probability.</p>
-</div>
 <div class="section" id="bayes-decision-theory">
-<h2>Bayes Decision Theory<a class="headerlink" href="#bayes-decision-theory" title="Permalink to this headline">¶</a></h2>
+<h3>Bayes Decision Theory<a class="headerlink" href="#bayes-decision-theory" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="case-1-two-classes">
-<h3>Case 1: Two Classes<a class="headerlink" href="#case-1-two-classes" title="Permalink to this headline">¶</a></h3>
+<h4>Case 1: Two Classes<a class="headerlink" href="#case-1-two-classes" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>Let <span class="math notranslate nohighlight">\(\omega_1\)</span>, <span class="math notranslate nohighlight">\(\omega_2\)</span> be the two classes which need to be identified.</p></li>
 <li><p>We assume <span class="math notranslate nohighlight">\(P(\omega_1)\)</span>, <span class="math notranslate nohighlight">\(P(\omega_2)\)</span> is known.</p>
 <ul>
 <li><p>If not available, can be calculated using training data based on the propotion of each class.</p></li>
-<li><p><span class="math notranslate nohighlight">\(P(\omega_i) = N_i / N\)</span>, where <span class="math notranslate nohighlight">\(N_i\)</span> is the number of examples in</p></li>
+<li><p><span class="math notranslate nohighlight">\(P(\omega_i) = N_i / N\)</span>, where <span class="math notranslate nohighlight">\(N_i\)</span> is the number of samples with label <span class="math notranslate nohighlight">\(\omega_i\)</span> and <span class="math notranslate nohighlight">\(N\)</span> is the total number of samples.</p></li>
 </ul>
 </li>
 </ul>
+</div>
 </div>
 </div>
 </div>
