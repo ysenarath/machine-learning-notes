@@ -109,3 +109,9 @@ $$
 $$
 L = [\lambda_{ki}]
 $$
+
+- Risk associated with $\omega_k$ is,
+
+$$
+r_k = \sum_{i=1}^{M}\lambda_{ki}\int_{R_i}p()
+$$
