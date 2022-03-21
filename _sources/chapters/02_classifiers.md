@@ -113,5 +113,8 @@ $$
 - Risk associated with $\omega_k$ is,
 
 $$
-r_k = \sum_{i=1}^{M}\lambda_{ki}\int_{R_i}p(\textbf{x}|\omega_k)d\textbf{x}
+r_k = \sum_{i=1}^{M}\lambda_{ki}\int_{R_i}p(\textbf{x}|\omega_k)d\textbf{x} \\
+
+r = \sum_{k=1}^{M}r_kP(\omega_k)
 $$
+
