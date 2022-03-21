@@ -406,15 +406,21 @@ P_e = P(\omega_1) - \int_{R_1}(P(\omega_1|\textbf{x})-P(\omega_2|\textbf{x}))p(\
 <h3>Minimizing the Average Risk<a class="headerlink" href="#minimizing-the-average-risk" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Not always error is preferred, need to bias the classification to give more error to some misclassifing some important classes (e.g., diagnosis of a disease).</p></li>
-<li><p>This is achieved by weighting the class errors with a panelty value.</p></li>
+<li><p>This is achieved by weighting the class errors with a panelty value (aka. loss).</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 r = \lambda_{12}P(\omega_1)\int_{R2}P(\textbf{x}|\omega_1)d\textbf{x} + \lambda_{21}P(\omega_2)\int_{R1}P(\textbf{x}|\omega_2)d\textbf{x} \\
 \end{split}\]</div>
 <ul class="simple">
-<li><p>Setting <span class="math notranslate nohighlight">\(\lambda_{12} &gt; \lambda_{21}\)</span> will cause errors due to the assignment of patterns originating from <span class="math notranslate nohighlight">\(\omega_1\)</span> to <span class="math notranslate nohighlight">\(\omega_2\)</span> to have a larger effect on the cost function than the errors associated with the second term in the summation</p></li>
+<li><p>Setting <span class="math notranslate nohighlight">\(\lambda_{12} &gt; \lambda_{21}\)</span> will cause errors due to the assignment of patterns originating from <span class="math notranslate nohighlight">\(\omega_1\)</span> to <span class="math notranslate nohighlight">\(\omega_2\)</span> to have a larger effect on the cost function than the errors associated with the second term in the summation.</p></li>
+<li><p>The loss <span class="math notranslate nohighlight">\(\lambda_{ki}\)</span> is the panelty for assigning class <span class="math notranslate nohighlight">\(\omega_i\)</span> as class <span class="math notranslate nohighlight">\(\omega_k\)</span>.</p></li>
+<li><p>In <span class="math notranslate nohighlight">\(M\)</span> class problem, the losses can be represented as a matrix (<span class="math notranslate nohighlight">\(L\)</span>) called loss matrix.</p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[
+L = [\lambda_{ki}]
+\]</div>
 </div>
 </div>
 </div>
