@@ -96,3 +96,10 @@ $$
 ### Minimizing the Average Risk
 
 - Not always error is preferred, need to bias the classification to give more error to some misclassifing some important classes (e.g., diagnosis of a disease).
+- This is achieved by weighting the class errors with a panelty value.
+
+$$
+r = \lambda_{12}P(\omega_1)\int_{R2}P(\textbf{x}|\omega_1)d\textbf{x} + \lambda_{21}P(\omega_2)\int_{R1}P(\textbf{x}|\omega_2)d\textbf{x} \\
+$$
+
+- Setting $\lambda_{12} > \lambda_{21}$ will cause errors due to the assignment of patterns originating from $\omega_1$ to $\omega_2$ to have a larger effect on the cost function than the errors associated with the second term in the summation
