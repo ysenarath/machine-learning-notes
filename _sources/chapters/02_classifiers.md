@@ -116,6 +116,6 @@ $$
 r_k &= \sum_{i=1}^{M}\lambda_{ki}\int_{R_i}p(\textbf{x}|\omega_k)d\textbf{x} \\
 
 r &= \sum_{k=1}^{M}r_kP(\omega_k) \\
-&= \sum_{i=1}^{M}\int_{R_i}(\sum_{k=1}^{M}\lambda_{ki})p(\textbf{x}|\omega_k)P(\omega_k)d\textbf{x}
+&= \sum_{i=1}^{M}\int_{R_i}(\sum_{k=1}^{M}\lambda_{ki}p(\textbf{x}|\omega_k)P(\omega_k))d\textbf{x}
 $$
 
